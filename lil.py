@@ -674,10 +674,127 @@
 #         continue
 #     print(i)
 
-# break
+# break 
+
+# for i in range (1,10):
+#     if i==5:
+#         break
+#     print(i)
+
 # pass
 
+# for i in range (1,10):
+#     if i%2==0:
+#        pass
+#     else:
+#         print(i)
 
+# WAP to print numbers from 1 to 10 usimg for loop
+
+# for i in range(1,11):
+#     print(i)
+
+# WAP to find the sum of all elements in a list using for loop
+
+# numbers = [1, 2, 3, 4, 5]
+# total = 0
+# for num in numbers:
+#     total+=num
+# print(f"The sum of list is {total}")
+
+# WAP to calculate the factorial of a given number using for loop
+
+# n = int(input("Enter a positive number: "))
+# factorial = 1
+# for i in range(1,n+1):
+#     factorial *= i
+# print(f"The factorial is {factorial}")
+
+# WAP to reverse a string using for loop
+
+# s=input("Enter a string: ") 
+# reversed_string = " "
+# for char in s:
+#     reversed_string = char + reversed_string
+# print(f"The reversed string is {reversed_string}")
+
+# WAP to find the maximum in a list using for loop
+
+# numbers = [3, 5, 2, 8, 1]
+# max_num = numbers[0]
+# for num in numbers:
+#     if num > max_num:
+#         max_num = num
+# print(f"The maximum number in a list is {max_num}")
+
+# WAP to print the 'n' numbers in the fibonacci sequence uaing for loop
+
+# n = int(input("Enter the number: "))
+# a , b = 0 , 1
+# for i in range(n):
+#     print(a,end=" ")
+#     a, b = b , a+b
+
+# WAP to print all prime numbers between 1 to 50 using for loop
+
+# for num in range(2,51):
+#     is_prime = True
+#     for i in range (2,int (num**0.5)+1):
+#         if num%i==0:
+#             is_prime = False
+#             break
+#     if is_prime :
+#         print(num,end=" ")
+
+# WAP to create a list of square of numbers from 1 to 10  using a for loop
+
+# square = [i**2 for i in range(1,11)]
+# print(square)
+
+# WAP to  print multiplication table from 1 to 5 using nested for loop
+
+# for i in range (1,6):
+#     for j in range(1,11):
+#         print(f"{i} x {j} = {i*j}")
+#     print()
+
+# WAP to take a list of integers and print the sum of the digits of each numbers using a for loop
+
+# numbers = [123, 456, 789]
+# for num in numbers: 
+#     sum_of_digits = 0
+#     for digit in str(num): 
+#         sum_of_digits += int(digit)
+#     print(f"The sum of digits in {num} is {sum_of_digits}")
+
+# WAP to count the occurance of each character in a string using for loop
+
+# s = input("Enter a string: ")
+# char_count = {}  
+# for char in s:
+#     if char in char_count:
+#         char_count[char]+=1
+#     else:
+#         char_count[char]=1
+# print(char_count)
+
+# WAP to find the transpose of a 2x2 matrix using a nested  for loop
+
+# matrix = [[1,2],[3,4]]
+# transpose = [[0,0],[0,0]]
+
+# for i in range (len(matrix)):
+#     for j in range (len(matrix[0])):
+#         transpose [j][i]= matrix[i][j]
+
+# print("Orignal matrix: ")
+# for row in matrix:
+#     print(row)
+# print("Transpose matrix: ")
+# for row in transpose:
+#     print(row)
+
+    
 
 
 

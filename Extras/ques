@@ -1,0 +1,99 @@
+# Math module
+
+## Funtions in math
+1. pi
+2. cos
+3. tan
+4. sin
+5. max
+
+
+### Function?
+
+Block of statement that execute the series of line code
+
+
+Q2 WAP to find the value of e = under root x^2 + y^2
+
+
+### if and else
+
+Q3 WAP to take  input a number from the user and check the number  is  positive or negative
+
+Q4 WAP to input a number if number is positive then find out sqrt else find out pow of 5 of that number
+
+Q5 WAP to input two numbers and find max and min out of them.
+
+Q6 WAP to intput sales amount and puchase amount and display profit or loss value according to the sales and purcase amount
+
+
+### if then elif
+
+Q7 WAP to take input the average marks of a student and display division according to the following condition
+
+1. < 33             ==> Fail
+2. 33 - 45          ==> Third
+3. 45 - 60          ==> Second
+4. >= 60            ==> First
+
+Q8 WAP to take input temperate of a day and display message according to the condition
+
+1. temp < 18                    ==> Day is Cold
+2. temp > 18 and temp < 25      ==> Day is normal
+3. temp > 25                    ==> Day is hot
+
+## Match Case
+
+Match case statement is used to represent each and every progam in the form of branch whose each branch represented by case statement or case keyword.
+
+It is also called menu system because each and every program specidfied in the form of menu
+
+Q1 WAP to display forllowing hardware devices as per the requirements
+
+Q2 WAP to calculate the followings
+    a. Add 20 in a number
+    b. A number divided by 2
+    c. A number multiplied by 3
+    d. A number subtracted by 5
+
+Q3 WAP to convert F to C and vice-versa using match case
+
+## Loop
+
+It is a control statement used to repeat their body until condition is not false.
+It execute a series of statement.
+
+Their are different kinds of loops used in python language to repeat their body for different purpose.
+
+1. For Loop
+2. While Loop
+3. Do - While loop
+
+Loop always consist of
+    a. Initialization
+    b. condition checking
+    c. Updation
+
+## For Loop Syntax
+
+for variable in range(initial_value, final_value, updation):
+    Statements
+
+Q4 WAP to print the following sequence
+
+Q5 WAP to print the sequence
+
+1 10 2 9 3 8 .... 10 1
+
+Q6 WAP to print the series
+
+s = x^1 + x^2 + x^3 + ... + x^n
+
+Q7 WAP to print the series
+s = x^1 / 1 + x^2 / 2 + x^3 /3 + ... + x^n / n
+
+Q8 WAP to print the series
+s = x^1 / 1 - x^2 / 2 + x^3 /3 - ...  x^n / n
+
+Q9 WAP to input two no and display the number b/w them.
+

@@ -1,0 +1,35 @@
+Here's a list of Python keywords:
+
+False: Boolean value representing false.
+True: Boolean value representing true.
+None: Represents a null value or absence of a value.
+and: Logical operator for logical AND.
+as: Used in context managers or to create aliases for module imports.
+assert: Used for debugging purposes to assert that a condition is true.
+break: Used to exit from a loop prematurely.
+class: Keyword used to define a new class.
+continue: Used to skip the rest of the current iteration of a loop and continue with the next iteration.
+def: Keyword used to define a new function.
+del: Used to delete a reference to an object.
+elif: Short for "else if," used in conditional statements.
+else: Keyword used in conditional statements to execute code when the condition is false.
+except: Used in exception handling to catch exceptions.
+finally: Used in exception handling to define cleanup actions that are always executed, regardless of whether an exception occurred.
+for: Keyword used to create a for loop.
+from: Used in import statements to import specific attributes or submodules from a module.
+global: Used to declare that a variable refers to the global scope.
+if: Keyword used to create an if statement.
+import: Keyword used to import modules or packages.
+in: Keyword used to check if a value is present in a sequence.
+is: Keyword used for identity comparison.
+lambda: Keyword used to create anonymous functions.
+nonlocal: Used to declare that a variable refers to a nonlocal scope.
+not: Logical operator for logical NOT.
+or: Logical operator for logical OR.
+pass: Placeholder statement that does nothing. Used when a statement is syntactically required but no action is needed.
+raise: Used to raise exceptions.
+return: Keyword used to return a value from a function.
+try: Used to start a block of code for exception handling.
+while: Keyword used to create a while loop.
+with: Used to simplify exception handling and resource management using context managers.
+yield: Keyword used in generator functions to yield a value.

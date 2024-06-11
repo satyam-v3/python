@@ -1,0 +1,37 @@
+print("\033[31mThis is red text\033[0m")
+print("\033[32mThis is green text\033[0m")
+print("\033[33mThis is yellow text\033[0m")
+print("\033[34mThis is blue text\033[0m")
+
+
+from colorama import Fore, Back, Style, init
+
+# Initialize colorama
+init()
+
+print(Fore.RED + 'This is red text')
+print(Fore.GREEN + 'This is green text')
+print(Fore.YELLOW + 'This is yellow text')
+print(Fore.BLUE + 'This is blue text')
+print(Back.YELLOW + 'This text has a yellow background')
+print(Style.BRIGHT + 'This is bright text')
+print(Style.RESET_ALL + 'Back to normal')
+
+
+from termcolor import colored
+
+print(colored('This is red text', 'red'))
+print(colored('This is green text', 'green'))
+print(colored('This is yellow text', 'yellow'))
+print(colored('This is blue text', 'blue'))
+print(colored('This text has a yellow background', 'grey', 'on_yellow'))
+
+
+from rich import print
+
+print("[bold red]This is red text[/bold red]")
+print("[bold green]This is green text[/bold green]")
+print("[bold yellow]This is yellow text[/bold yellow]")
+print("[bold blue]This is blue text[/bold blue]")
+
+

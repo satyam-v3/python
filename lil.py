@@ -794,8 +794,108 @@
 # for row in transpose:
 #     print(row)
 
-    
+# Pattern 
 
+# n = int(input("Enter the no of rows: "))
+# for i in range(n):
+#     for j in range(n):
+#         print("*",end=" ")
+#     print()
 
+# n = int(input("Enter the no of rows: "))
+# for i in range (n,0,-1):
+#     for j in range(i):
+#         print("*",end=" ")
+#     print()
 
+# n = int(input("Enter the no of rows: "))
+# for i in range(1,n+1):
+#     for j in range(i):
+#         print("*",end=" ")
+#     print()
 
+# n = int(input("Enter the no of rows: "))
+# for i in range(n,0,-1):
+#     # spaces
+#     for j in range(n-i):
+#         print(" ",end=" ")
+#     # stars
+#     for k in range(i):
+#         print("*",end=" ")
+#     print()
+
+# n = int(input("Enter the no of rows: "))
+# for i in range(1,n+1):
+#     # spaces
+#     for j in range(n-i):
+#         print(" ",end=" ")
+#     # stars
+#     for k in range (i):
+#         print("*",end=" ")
+#     print()
+
+###  Special pattern ###
+
+# n = int(input("Enter the no of rows: "))
+
+# # Upper portion
+# for i in range(n,0,-1):
+#     # upper left corner
+#     for j in range(i):
+#         print("*",end=" ")
+#     # middle space
+#     for k in range(n-i):
+#         print(" ",end=" ")
+#     for l in range(n-i):
+#         print(" ",end=" ")
+#     # upper right corner 
+#     for m in range(i):
+#         print("*",end=" ")
+#     print()
+
+# # Lower portion
+# for i in range(1,n+1):
+#     # lower left corner
+#     for j in range(i):
+#         print("*",end=" ")
+#     # spaces
+#     for k in range(n-i):
+#         print(" ",end=" ")
+#     for k in range(n-i):
+#         print(" ",end=" ")
+#     # lower right corner
+#     for m in range(i):
+#         print("*",end=" ")
+#     print()
+
+# n = int(input("Enter the no of rows: "))
+# for i in range (1,n+1):
+#     # spaces
+#     for j in range(n-i):
+#         print(" ",end=" ")
+#     # stars
+#     for k in range(2*i-1):
+#         print("*",end=" ")
+#     print()
+
+# n = int(input("Enter the no of rows: "))
+# for i in range (n,0,-1):
+#     # spaces
+#     for j in range(n-i):
+#         print(" ",end=" ")
+#     # stars
+#     for k in range(2*i-1):
+#         print("*",end=" ")
+#     print()
+
+# Pascal's Triangle
+
+# n = int(input("Enter the no of rows: "))
+# for i in range(n):
+#     for j in range(n-i+1):
+#         print(end=" ")
+#     c = 1
+#     for j in range(1,i+1):
+#         print(c,end=" ")
+#         c = c*(i-j)//j
+#     print()

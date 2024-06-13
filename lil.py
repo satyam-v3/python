@@ -899,3 +899,132 @@
 #         print(c,end=" ")
 #         c = c*(i-j)//j
 #     print()
+
+# Sets
+# {}, set()
+
+# Using curley braces
+# my_set = {1, 2, 3, 4, 5}
+# print(my_set)
+# print(type(my_set))
+
+# using the set() function
+# another_set = set([1, 2, 3, 4, 5])
+# print(another_set)
+
+# creating an empty set (Using empty curly braces creates an empty dictionary)
+# empty_set = set()
+# print(type(empty_set))
+
+# Operations
+
+# Adding Elements
+# my_set = {1, 2, 3, 4}
+# my_set.add(5)
+# print(my_set)
+
+# Removing Elements
+# my_set = {1, 2, 3, 4}
+# my_set.remove(4)
+# print(my_set)
+# # my_set.remove(5)
+
+# my_set.discard(3)
+# print(my_set)
+# my_set.discard(5)
+
+# Union
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+# union_set = set1|set2
+# print(union_set)
+
+# Intersection
+# intersection_set = set1 & set2
+# print(intersection_set)
+
+# Difference
+# difference_set = set1 - set2
+# print(difference_set)
+
+# Symetric difference
+# sym_diff_set = set1 ^ set2
+# print(sym_diff_set)
+
+# Membership testing
+# print(1 in set1)
+# print(9 in set1)
+
+# squares = {x**2 for x in range(1,6)}
+# print(squares)
+
+# numbers = [i for i in range(1,101)]
+# evens = {x for x in numbers if x%2 == 0}
+# print(evens)
+
+# Tuples
+# (), ','
+
+# Using parenthesis
+# my_tuple = (1, 2, 3)
+# print(my_tuple)
+# print(type(my_tuple))
+
+# # Using commas
+# another_tuple = 1,2,3
+# print(another_tuple)
+# print(type(another_tuple))
+
+# # Single element
+# single_element = 1,
+# print(single_element)
+# print(type(single_element))
+
+# Basic Operations
+
+# tuple1 = (1, 2, 3)
+# tuple2 = (4, 5, 6)
+# con_tuple = tuple1 + tuple2
+# print(con_tuple)
+
+# tuple1 = (1, 2, 3)
+# repated_tuple = tuple1 *5
+# print(repated_tuple)
+
+# my_tuple = (1, 2, 3, 4, 5)
+# print(my_tuple[3])
+# print(my_tuple[-1])
+
+# my_tuple = (1, 2, 3, 4, 5)
+# print(my_tuple[1:4])
+# print(my_tuple[:3])
+# print(my_tuple[::2])
+
+# Built-in Function
+
+# len()
+# my_tuple = (1, 2, 3, 4, 5)
+# print(len(my_tuple))
+
+# min() & max()
+# my_tuple = (1, 2, 3, 4, 5)
+# print(min(my_tuple))
+# print(max(my_tuple))
+
+# sum()
+# my_tuple = (1, 2, 3, 4, 5)
+# print(sum(my_tuple))
+
+# my_tuple = (0,1)
+# print(any(my_tuple))
+# print(all(my_tuple))
+
+# sorted()
+# my_tuple = (5,2,4,1,3,0)
+# print(sorted(my_tuple))
+
+# Nested Tuples
+# nested_tuples = (1, (2, 3), (4, (5, 6)))
+# print(nested_tuples[1])
+# print(nested_tuples[1][1])
+# print(nested_tuples[2][1][1])

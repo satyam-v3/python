@@ -934,8 +934,8 @@
 # my_set.discard(5)
 
 # Union
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
+# set1 = {1, 2, 3}
+# set2 = {3, 4, 5}
 # union_set = set1|set2
 # print(union_set)
 
@@ -1028,3 +1028,162 @@ set2 = {3, 4, 5}
 # print(nested_tuples[1])
 # print(nested_tuples[1][1])
 # print(nested_tuples[2][1][1])
+
+# Lists
+
+# [], list()
+
+# Using square barckets
+# my_list = [1,2,3,4,5]
+# print(my_list)
+# print(type(my_list))
+
+# Using list() fun
+# another_list = list([1,2,3,4,5])
+# print(another_list)
+
+# Empty list
+# empty_list = []
+# print(empty_list)
+# print(type(empty_list))
+
+# Basic Operations
+# Adding elements
+
+# my_list = [1,2,3,4]
+
+# my_list.append(5)
+# print(my_list)
+
+# my_list.extend([6,7])
+# print(my_list)
+
+# my_list.insert(2,"🫠")
+# print(my_list)
+
+# Removein Elements
+
+# my_list = [1,2,3,4,5,6,7,8]
+
+# my_list.remove(2)
+# print(my_list)
+
+# i = my_list.pop(4)
+# print(my_list)
+# print(i)
+
+# my_list.clear()
+# print(my_list)
+
+# Modifying Elements
+
+# my_list = [1,2,3]
+# my_list[0] = 5
+# print(my_list)
+
+# Indexing & Slicing
+
+# my_list = [1,2,3,4,5]
+# print(my_list[0])
+# print(my_list[-1])
+
+# my_list = [1,2,3,4,5]
+# print(my_list[1:4])
+# print(my_list[:3])
+# print(my_list[::2])
+
+# Nested lists
+
+# nested_list = [[1,2],[3,4],[5,6]]
+# print(nested_list)
+# # Assessing elements in a nested list
+# print(nested_list[0][1])
+# print(nested_list[2][0])
+
+# List comprehension
+
+# saquare = [x**2 for x in range(1,11)]
+# print(saquare)
+
+# Dictionaries
+# {}, dict()
+
+# Using curley braces
+# my_dict = {'name':'Jyoti','age':40,'city':'jamshedpur'}
+# print(my_dict)
+
+# Using the dict()
+# another_dict = dict(name = 'Jyoti', age = 40, city = 'jamshedpur')
+# print(another_dict)
+
+# Empty dict
+# empty_dict = {}
+# print(empty_dict)
+# print(type(empty_dict))
+
+# BAsic Operations
+# Accessing Value
+
+# my_dict = {'name':'Jyoti','age':40,'city':'jamshedpur'}
+# print(my_dict['name'])
+# print(my_dict['age'])
+
+# Adding and Modifying
+
+# my_dict = {'name':'Jyoti','age':40 }
+
+# # Adding new key pair
+# my_dict['city'] = 'Jamshedpur'
+# print(my_dict)
+
+# # Modifying 
+# my_dict['age'] = 80
+# print(my_dict)
+
+# REmoving items
+# my_dict = {'name':'Jyoti','age':40,'city':'jamshedpur'}
+
+# # del()
+# del my_dict['city']
+# print(my_dict)
+
+# # pop()
+# age = my_dict.pop('age')
+# print(my_dict)
+# print(age)
+
+# popitem()
+# item = my_dict.popitem()
+# print(my_dict)
+# print(item)
+
+
+
+# my_dict = {'name':'Jyoti','age':40,'city':'jamshedpur'}
+# iterating through keys
+# for key in my_dict:
+#     print(key,my_dict[key])
+
+# # iterating through values
+# for value in my_dict.values():
+#     print(value)
+
+# Iterating through key values pairs
+# for key,value in my_dict.items():
+#     print(key,value)
+
+# Built - in  fun
+
+# my_dict = {'name':'Jyoti','age':40,'city':'jamshedpur'}
+# print(len(my_dict))
+
+# print(my_dict.keys())
+# print(my_dict.values())
+# print(my_dict.items())
+
+# my_dict.clear()
+# print(my_dict)
+
+# Comprenension
+# squares = {x: x**2 for x in range(1,11)}
+# print(squares)

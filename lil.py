@@ -1187,3 +1187,194 @@
 # Comprenension
 # squares = {x: x**2 for x in range(1,11)}
 # print(squares)
+
+# Arrays
+
+# Using the 'array' module
+# import array
+
+# int_array = array.array('i',[1, 2, 3, 4])
+# print(int_array)
+
+# float_array = array.array('f',[1, 2, 3, 4])
+# print(float_array)
+
+# Using numpy
+# import numpy as np
+
+# np_array = np.array([1, 2, 3, 4])
+# print(np_array)
+
+# Indexing and Traversal
+
+# Accessing Elements
+# print(int_array[0])
+# print(int_array[2])
+
+# Traversing an array
+# for elements in int_array:
+#     print(elements)
+
+# Manupulation
+
+# Adding elements (using array module)
+# int_array.append(5)
+# print(int_array)
+
+# Removing Elements  (using array module)
+# int_array.remove(2)
+# print(int_array)
+
+# Adding Elements ( using numpy )
+# np_array = np.append(np_array,[5,6])
+# print(np_array)
+
+# Removing Elements (Using numpy)
+# np_array = np.delete(np_array,1)
+# print(np_array)
+
+# Strings
+
+# my_string = "Hello world!"
+# print(my_string)
+
+# another_string = 'Python is bakwas'
+# print(another_string)
+
+# Indexing & Slicing
+# Accessing character
+# print(my_string[0])
+# print(my_string[-1])
+
+# Slicing strings
+# print(my_string[0:5])
+# print(my_string[7:])
+# print(my_string[::-1])
+
+# Built - in Functions
+
+# len()
+# print(len(my_string))
+
+# str.upper()
+# print(my_string.upper())
+
+# str.lower()
+# print(my_string.lower())
+
+# str.replace()
+# print(my_string.replace('world','Python'))
+
+# str.split()
+# print(my_string.split(' '))
+
+# str.strip()
+# whitespace_string = "    Hello,Jyoti!    "
+# print(whitespace_string)
+# print(whitespace_string.strip())
+
+# str.find()
+# print(my_string.find('World'))
+
+# str.join()
+# list_of_strings = ['hello','Jyoti','How','are','you?']
+# print(" ".join(list_of_strings))
+
+# Functions
+
+# def function_name(parameters):
+#     ''' Docstrings(optional): Describes the function '''
+#     # Function Body
+#     return #Value  ( Optional )
+
+# def greet(name):
+#     ''' Greet a person by name '''
+#     return f"Hello!,{name}"
+
+# print(greet("Jyoti"))
+
+# def example_function(a,b,c=3,*args,**kwargs):
+#     print(a, b, c)
+#     print(args)
+#     print(kwargs)
+
+# example_function(1,2)
+# example_function(1, 2, 3, 4, 5, 6, d=7, e=8)
+
+# Return
+# def add(a,b):
+#     return a+b
+
+# print(add(5,6))
+
+# Yield
+# def generate_numbers():
+#     for i in range(5):
+#         yield i
+
+# gen = generate_numbers()
+# print(next(gen))
+# print(next(gen))
+
+# None 
+# def do_nothing():
+#     pass
+
+# result = do_nothing
+# print(result)
+
+# x = "global"
+
+# def outer():
+#     x = outer
+
+#     def inner():
+#         nonlocal x
+#         x = "inner"
+#         print("Inner: ",x)
+
+#     inner()
+#     print("Outer: ",x)    
+
+# outer()
+# print("Global: ",x)
+
+# Recursion
+
+# def factorial(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+    
+# print(factorial(5))
+
+# Ananonyms function
+
+# square = lambda x: x ** 2
+# print(square(5))  # Output: 25
+
+# # Lambda function with map
+# nums = [1, 2, 3, 4]
+# squared_nums = list(map(lambda x: x ** 2, nums))
+# print(squared_nums)  # Output: [1, 4, 9, 16]
+
+# def describe_person(name, age, city='Unknown'):
+#     return f"{name} is {age} years old and lives in {city}"
+
+# print(describe_person("jyoti",40, "Jamshedpur"))
+
+# def concatenate(*args, separator=" "):
+#     return separator.join(args)
+
+# print(concatenate("Hello", "world", "!"))  # Output: Hello world !
+# print(concatenate("Python", "is", "awesome", separator="-"))  # Output: Python-is-awesome
+
+# def countdown(n):
+#     while n > 0:
+#         yield n
+#         n -= 1
+
+# for number in countdown(5):
+#     print(number)
+

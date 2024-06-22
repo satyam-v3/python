@@ -2,8 +2,8 @@ from PIL import Image, ImageEnhance, ImageFilter
 import os
 
 # Paths to the input and output directories
-path = ''
-pathOut = './editedImgs'
+path = '' # Inputs folders
+pathOut = '' # output folders
 
 # Ensure the output directory exists
 os.makedirs(pathOut, exist_ok=True)

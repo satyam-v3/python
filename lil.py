@@ -1378,3 +1378,164 @@
 # for number in countdown(5):
 #     print(number)
 
+# modules and Packages
+
+# mymudule.py
+
+# def greet(name):
+#   return f"Hello {name}"
+
+# def add(a,b):
+#     return a+b
+
+# import mymodule
+
+# print(mymodule.greet("Alice"))
+# print(mymodule.add(2,3))
+
+# MODULE NAMESPACE
+
+# mymodule.py
+# x=10
+# def show():
+#     print(x)
+
+# another_module.py
+# x=20
+# def display():
+#     print(x)
+
+# main.py
+# import mymodule
+# import another_module
+# mymodule.show()
+# another_module.display()
+
+# Packages
+
+# mypackage/
+#     __init__.py
+#     module1.py
+#     module2.py
+
+# module1.py
+# def func1():
+#     return "This is function 1"
+
+# module2.py
+# def func2():
+#     return "This is function 2"
+
+# __init__.py
+# from.module1 import func1
+# from.module2 import func2
+
+# import mypackage
+
+# print(mypackage.func1())
+# print(mypackage.func2())
+
+# Math module
+
+# import math 
+# print(dir(math))
+
+# print(math.sqrt(16))
+# print(math.pi)
+# print(math.sin(math.radians(90)))
+
+# Random module
+
+# import random
+
+# print(dir(random))
+# print(random.random())
+# print(random.randint(1,10))
+# print(random.choice(["apple","banana","cherry"]))
+
+# Emoji module
+
+# import emoji
+
+# print(dir(emoji))
+# print(emoji.emojize("Python is fun :thumbs_up:"))
+# print(emoji.demojize("python is fun 👍"))
+
+
+# NumPy
+
+# import numpy as np
+
+# # creating arrays
+# a = np.array([1, 2, 3, 4])
+# b = np.array([5, 6, 7, 8])
+
+# # Element wise addition
+# print(np.add(a,b))
+
+# # Element-wise subtraction
+# print(np.subtract(a,b))
+
+# # Element-wise multiplication
+# print(np.multiply(a,b))
+
+# # Element-wise divide
+# print(np.divide(a,b))
+
+# # Element-wise power
+# print(np.power(a,2))
+
+# NumPy Array manipulation
+
+# # Reshape
+# c = np.array([[1, 2, 3],[4, 5, 6]])
+# print(c.reshape(3,2))
+
+# # Flatten
+# print(c.flatten())
+
+# # Concatenate
+# d = np.array([[7, 8, 9],[10, 11, 12]])
+# print(np.concatenate((c,d),axis=0))
+
+# # Stack
+# print(np.stack((c,d),axis=1))
+
+# NumPy Statistical Function
+
+# Array
+# e = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+# # mean
+# print(np.mean(e))
+
+# # Standard Deviation
+# print(np.std(e))
+
+# # Variance
+# print(np.var(e))
+
+# # Sum
+# print(np.sum(e))
+
+# # min & max
+# print(np.min(e))
+# print(np.max(e))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1522,6 +1522,16 @@
 # print(np.min(e))
 # print(np.max(e))
 
+# leetcode 7 No. 
+
+# n = int (input("Enter the nuber: "))
+# reverse = 0
+# while n!=0:
+#     digit = n%10
+#     reverse = (reverse * 10) + digit
+#     n = n // 10
+# print (reverse)
+
 
 
 

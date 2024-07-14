@@ -1634,7 +1634,7 @@
 # Working with files using DataFrames (Pandas)
 
 # Reading files into DataFrames
-import pandas as pd
+# import pandas as pd
 
 # # Reading a csv file
 # df = pd.read_csv('/Users/satyamkumar/Documents/code/expenses.csv')

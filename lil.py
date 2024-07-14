@@ -1522,6 +1522,196 @@
 # print(np.min(e))
 # print(np.max(e))
 
+# Pandas
+
+# import pandas as pd
+# import numpy as np
+
+# # Creating Series
+# s = pd.Series([1, 3, 5, np.nan, 6, 8])
+# print(s)
+
+# # # Creating DataFrame
+
+# data = {
+#     'A' : [1, 2, 3, 4],
+#     'B' : [5, 6, 7, 8],
+#     'C' : [9, 10, 11, 12]
+# }
+# df = pd.DataFrame(data)
+# print(df)
+
+# # From list of lists
+# data = [[1, 2], [3, 4], [5, 6]]
+# df1 = pd.DataFrame(data,columns=['Column1', 'Column2'])
+# print(df1)
+
+# # From Dictionary
+# data = {'column1':[1, 2, 3],'column2':[4, 5, 6]}
+# df2 = pd.DataFrame(data)
+# print(df2)
+
+# # From NumPy Array
+
+# data = np.array([[1, 2, 3], [4, 5, 6]])
+# df3 = pd.DataFrame(data, columns=['A', 'B', 'C'])
+# print(df3)
+
+# # Formatting Data
+# # Setting an index
+# df.set_index('A', inplace = True)
+# print(df)
+
+# # Renaming columns
+# df.rename(columns = {'B':'Column2', 'C' : 'Column3' }, inplace = True)
+# print(df)
+
+# # Applying Functions
+# df['Column3'] = df['Column3'].apply(lambda x : x * 2)
+# print(df)
+
+# # Fundamental DataFrames Operations
+
+# # Selecting a column
+# print(df['Column2'])
+
+# # Filtering Rows
+# print(df[df['Column2']>5])
+
+# # Grouping
+# grouped = df.groupby('Column2').sum()
+# print(grouped)
+
+# # Merging 
+# df1 = pd.DataFrame({'key':['A', 'B', 'C'], 'Value':[1, 2, 3]})
+# df2 = pd.DataFrame({'key':['A', 'B', 'C'], 'value':[4, 5, 6]})
+# merged = pd.merge(df1, df2, on = 'key', how = 'inner')
+# print(merged)
+
+# # Aggregation
+# print(df.agg({'Column2':['sum','mean'], 'Column3':['min','max']}))
+
+# File 
+
+# # Opening
+# file = open("/Users/satyamkumar/Documents/code/python/lil.py", mode = 'r', encoding='utf-8')
+
+# # Closing
+# file.close()
+
+# # Alternatively using "with" Statement
+# with open ("/Users/satyamkumar/Documents/code/python/Extras/ques", mode='r', encoding='utf-8') as file:
+#     content = file.read()
+
+# # Wrighting to files
+# with open("/Users/satyamkumar/Documents/code/python/Extras/Test", mode = 'w', encoding = 'utf-8') as file:
+#     file.write("Hello, world!\n")
+
+# lines = ['line 1 \n', 'line 2 \n', 'line 3 \n']
+# with open("/Users/satyamkumar/Documents/code/python/Extras/Test", mode = 'a', encoding = 'utf-8') as file:
+#     file.writelines(lines)
+
+# # Reading from Files
+
+# # Reading the Entire File
+# with open("/Users/satyamkumar/Documents/code/python/Extras/Test", mode = 'r', encoding = 'utf-8') as file:
+#     content = file.read()
+#     print(content)
+
+# # Reading line by line
+# with open("/Users/satyamkumar/Documents/code/python/Extras/Test", mode = 'r', encoding = 'utf-8') as file:
+#     line = file.readline()
+#     while line :
+#         print(line.strip())
+#         line = file.readline()
+
+# # Reading all lines into a list
+# with open("/Users/satyamkumar/Documents/code/python/Extras/Test", mode = 'r', encoding = 'utf-8') as file:
+#     lines = file.readlines()
+#     for line in lines:
+#         print(line.strip())
+
+# Working with files using DataFrames (Pandas)
+
+# Reading files into DataFrames
+import pandas as pd
+
+# # Reading a csv file
+# df = pd.read_csv('/Users/satyamkumar/Documents/code/expenses.csv')
+# print(df.head())
+
+# # Reading an Excel file
+# df = pd.read_excel('/Users/satyamkumar/Desktop/SUMMER INTERNSHIP Student details.xlsx', sheet_name = 'Sheet1')
+# print(df.head())
+
+# # Reading a JSON File
+# df = pd.read_json('') 
+# print(df.head())
+
+# # Wrighting DataFrames to files
+
+# # Wrighting to a csv file
+# df.to_csv('', index = False)
+
+# # Wrighting to an Excel file
+# df.to_excel('', sheet_name = 'Sheet1', index = False)
+
+# # Wrighting to a JSON File
+# df.to_json('', orient = 'records')
+
+# Error and Exception Handling
+
+# try:
+#     lst=[1,2,3]
+#     print(lst[5])
+# except IndexError as e:
+#     print(f"Caught an IndexError: {e} ")
+
+
+# a = input(" Enter the number ")
+# print(f" Multiplication table of {a} is : ")
+# try:
+#     for i in range(1,11):
+#         print(f" {int(a)} x {i} = {int(a) * i} ")
+# except Exception as e :
+#     print(f"Invalid Input : {e} ")
+
+
+# # User-defined Exception
+# class CustomError(Exception):
+#     def __init__(self, message):
+#         self.message = message
+#         super().__init__(self.message)
+
+# try:
+#     raise CustomError(" This is a custom error ")
+# except CustomError as e:
+#     print(f"Caught a custom error: {e} ")
+
+# # Catching Exceptions
+# try:
+#     x = int(input(" Enter a number "))
+#     y = 10 / x
+# except ZeroDivisionError as e :
+#     print(f" Error: Division by Zero is not allowed. {e} ")
+# except ValueError as e :
+#     print(f" Error: Invalid Input. {e} ")
+# else:
+#     print(f" Result: {y} ")
+# finally:
+#     print(" THIS BLOCK IS ALWAYS EXECUTED")
+
+# # Raising Exceptions
+# def Check_positive(number):
+#     if number <= 0:
+#         raise ValueError (" Number Must be +ve ")
+#     return number
+
+# try :
+#     Check_positive(-10)
+# except ValueError as e :
+#     print(f" Exception raised : {e} ")
+
 # leetcode 7 No. 
 
 # n = int (input("Enter the nuber: "))

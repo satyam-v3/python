@@ -2,10 +2,11 @@ import csv
 import os
 from datetime import datetime
 import matplotlib.pyplot as plt
+import uuid
 
 # Constants
 FILE_NAME = 'expenses.csv'
-FIELDS = ['Date', 'Amount', 'Category', 'Description']
+FIELDS = ['ID', 'Date', 'Amount', 'Category', 'Description']
 
 # Ensure the CSV file exists
 if not os.path.exists(FILE_NAME):
@@ -14,14 +15,26 @@ if not os.path.exists(FILE_NAME):
         writer.writerow(FIELDS)
 
 def add_expense():
-    date = input("Enter date (YYYY-MM-DD): ")
-    amount = float(input("Enter amount: "))
+    try:
+        date_str = input("Enter date (YYYY-MM-DD): ")
+        date = datetime.strptime(date_str, "%Y-%m-%d").date()
+    except ValueError:
+        print(" Invalid date format. Please enter the date in YYYY-MM-DD Format. ")
+        return
+    
+    try:
+        amount = float(input("Enter amount: "))
+    except ValueError:
+        print(" Invalid amount. Please enter a numeric value. ")
+        return
+    
     category = input("Enter category: ")
     description = input("Enter description: ")
+    expense_id = str(uuid.uuid4())
     
     with open(FILE_NAME, mode='a', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow([date, amount, category, description])
+        writer.writerow([expense_id, date, amount, category, description])
     
     print("Expense added successfully!")
 
@@ -33,8 +46,9 @@ def view_expenses():
             print(row)
 
 def delete_expense():
-    date = input("Enter the date of the expense to delete (YYYY-MM-DD): ")
+    expense_id = input(" Enter ID of the expense to delete. ")
     temp_file = 'temp.csv'
+    deleted = False
     
     with open(FILE_NAME, mode='r') as file, open(temp_file, mode='w', newline='') as temp:
         reader = csv.DictReader(file)
@@ -43,7 +57,7 @@ def delete_expense():
         deleted = False
         
         for row in reader:
-            if row['Date'] == date and not deleted:
+            if row['ID'] == expense_id and not deleted:
                 deleted = True
                 continue
             writer.writerow(row)

@@ -22,29 +22,26 @@ def generate_short_id(length=8):
     letters_and_digits = string.ascii_letters + string.digits
     return ''.join(random.choice(letters_and_digits) for i in range(length))
 
-def add_expense():
+def add_expense(date, amount, category, description):
     try:
-        date_str = input("Enter date (YYYY-MM-DD): ")
-        date = datetime.strptime(date_str, "%Y-%m-%d").date()
+        date = datetime.strptime(date, "%Y-%m-%d").date()
     except ValueError:
-        messagebox.showerror(" Invalid date format. Please enter the date in YYYY-MM-DD Format. ")
+        messagebox.showerror("Error", "Invalid date format. Please enter the date in YYYY-MM-DD format.")
         return
     
     try:
-        amount = float(input("Enter amount: "))
+        amount = float(amount)
     except ValueError:
-        messagebox.showerror(" Invalid amount. Please enter a numeric value. ")
+        messagebox.showerror("Error", "Invalid amount. Please enter a numeric value.")
         return
     
-    category = input("Enter category: ")
-    description = input("Enter description: ")
     expense_id = generate_short_id()
     
     with open(FILE_NAME, mode='a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow([expense_id, date, amount, category, description])
     
-    messagebox.showinfo("Sucess","Expense added successfully!")
+    messagebox.showinfo("Success", "Expense added successfully!")
 
 def view_expenses():
     expenses_window = tk.Toplevel(root)
@@ -55,8 +52,7 @@ def view_expenses():
             expense_str = f"ID: {row['ID']}, Date: {row['Date']}, Amount: {row['Amount']}, Category: {row['Category']}, Description: {row['Description']}"
             tk.Label(expenses_window, text=expense_str).pack()
 
-def delete_expense():
-    expense_id = input(" Enter ID of the expense to delete. ")
+def delete_expense(expense_id):
     temp_file = 'temp.csv'
     deleted = False
     
@@ -64,7 +60,6 @@ def delete_expense():
         reader = csv.DictReader(file)
         writer = csv.DictWriter(temp, fieldnames=FIELDS)
         writer.writeheader()
-        deleted = False
         
         for row in reader:
             if row['ID'] == expense_id and not deleted:
@@ -90,7 +85,7 @@ def expense_summary():
             else:
                 summary[category] = amount
     
-     # Display summary
+    # Display summary
     summary_window = tk.Toplevel(root)
     summary_window.title("Expense Summary")
     for category, total in summary.items():

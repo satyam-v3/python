@@ -7,4 +7,4 @@ celcius = int(input(" Enter the Temprature "))
 f = (celcius*9/5)+32
 
 # Print the Temperature
-print("temprature in farenhiet :" ,f)
+print("Temprature in Farenhiet :" ,f)
